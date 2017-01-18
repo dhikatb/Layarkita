@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.test.layarkita.DetailActivity"
+    tools:showIn="@layout/activity_detail">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="40dp"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etName"
+            android:layout_below="@+id/judul"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="name"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:maxLength="140"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etDeskripsi"
+            android:layout_below="@+id/deskripsi"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="deskripsi"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:maxLength="140"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/btnPost"
+            android:layout_marginTop="20dp"
+            android:id="@+id/garis"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textkomentar"
+            android:layout_below="@+id/btnKomentar"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="Komentar"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#018897" />
+
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivImage"
+            android:src="@android:drawable/star_big_on"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:id="@+id/lvComment"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/textkomentar"
+            android:nestedScrollingEnabled="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etKomenName"
+            android:layout_below="@+id/textView2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:nestedScrollingEnabled="true"
+            android:hint="Nama"
+            android:maxLength="20"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etKomenIsi"
+            android:layout_below="@+id/etKomenName"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Isi Komentar"
+            android:gravity="bottom"
+            android:nestedScrollingEnabled="true"
+            android:layout_alignRight="@+id/btnPost"
+            android:layout_alignEnd="@+id/btnPost"
+            android:maxLength="140"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/btnKomentar"
+            android:layout_below="@+id/etKomenIsi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Tulis Komentar"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/garis"
+            android:layout_centerHorizontal="true"
+            android:textColor="#018897"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            android:id="@+id/btnPost"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/switchStatus"
+            android:layout_alignRight="@+id/etKomenName"
+            android:layout_alignEnd="@+id/etKomenName" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:id="@+id/btnUpdate"
+            android:layout_alignBaseline="@+id/btnPost"
+            android:layout_alignBottom="@+id/btnPost"
+            android:layout_toLeftOf="@+id/btnPost"
+            android:layout_toStartOf="@+id/btnPost" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etYoutubeUrl"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="youtube url"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_below="@+id/youtubeurl"
+            android:layout_alignLeft="@+id/etDeskripsi"
+            android:layout_alignStart="@+id/etDeskripsi"
+            android:layout_alignRight="@+id/etDeskripsi"
+            android:layout_alignEnd="@+id/etDeskripsi"
+            android:maxLength="60"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etYoutubeCode"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="youtube code"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_below="@+id/youtubecode"
+            android:layout_alignLeft="@+id/etYoutubeUrl"
+            android:layout_alignStart="@+id/etYoutubeUrl"
+            android:layout_alignRight="@+id/etYoutubeUrl"
+            android:layout_alignEnd="@+id/etYoutubeUrl"
+            android:maxLength="11"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Judul Video :"
+            android:id="@+id/judul"
+            android:layout_below="@+id/ivImage"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/etName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Deskripsi Video :"
+            android:id="@+id/deskripsi"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/etName"
+            android:layout_alignLeft="@+id/etDeskripsi"
+            android:layout_alignStart="@+id/etDeskripsi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Youtube URL :"
+            android:id="@+id/youtubeurl"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/etDeskripsi"
+            android:layout_alignLeft="@+id/etYoutubeUrl"
+            android:layout_alignStart="@+id/etYoutubeUrl" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Youtube Code :"
+            android:id="@+id/youtubecode"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/etYoutubeUrl"
+            android:layout_alignLeft="@+id/etYoutubeCode"
+            android:layout_alignStart="@+id/etYoutubeCode" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Publish Video"
+            android:id="@+id/mySwitch"
+            android:checked="true"
+            android:layout_alignLeft="@+id/btnUpdate"
+            android:layout_alignStart="@+id/btnUpdate"
+            android:layout_below="@+id/etYoutubeCode"
+            android:layout_above="@+id/btnPost"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/switchStatus"
+            android:text="1"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/etYoutubeCode"
+            android:layout_toRightOf="@+id/mySwitch"
+            android:layout_toEndOf="@+id/mySwitch"
+            android:layout_marginLeft="15dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/status"
+            android:text="ON"
+            android:layout_marginTop="21dp"
+            android:layout_below="@+id/etYoutubeCode"
+            android:layout_toRightOf="@+id/mySwitch"
+            android:layout_toEndOf="@+id/mySwitch"
+            android:layout_marginLeft="15dp" />
+
+    </RelativeLayout>
+</ScrollView>
+
+

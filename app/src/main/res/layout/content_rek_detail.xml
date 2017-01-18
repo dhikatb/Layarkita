@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.test.layarkita.RekDetailActivity"
+    tools:showIn="@layout/activity_rek_detail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="40dp"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etName"
+            android:layout_below="@+id/judul"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="name"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:maxLength="140"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etDeskripsi"
+            android:layout_below="@+id/deskripsi"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="deskripsi"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:maxLength="140"/>
+
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivImage"
+            android:src="@android:drawable/star_big_on"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:id="@+id/btnPost"
+            android:layout_below="@+id/mySwitch"
+            android:layout_alignRight="@+id/switchStatus"
+            android:layout_alignEnd="@+id/switchStatus"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etYoutubeUrl"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="youtube url"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_below="@+id/youtubeurl"
+            android:layout_alignLeft="@+id/etDeskripsi"
+            android:layout_alignStart="@+id/etDeskripsi"
+            android:layout_alignRight="@+id/etDeskripsi"
+            android:layout_alignEnd="@+id/etDeskripsi"
+            android:maxLength="60"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etYoutubeCode"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="youtube code"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_below="@+id/youtubecode"
+            android:layout_alignLeft="@+id/etYoutubeUrl"
+            android:layout_alignStart="@+id/etYoutubeUrl"
+            android:layout_alignRight="@+id/etYoutubeUrl"
+            android:layout_alignEnd="@+id/etYoutubeUrl"
+            android:maxLength="11"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Judul Video :"
+            android:id="@+id/judul"
+            android:layout_below="@+id/ivImage"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/etName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Deskripsi Video :"
+            android:id="@+id/deskripsi"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/etName"
+            android:layout_alignLeft="@+id/etDeskripsi"
+            android:layout_alignStart="@+id/etDeskripsi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Youtube URL :"
+            android:id="@+id/youtubeurl"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/etDeskripsi"
+            android:layout_alignLeft="@+id/etYoutubeUrl"
+            android:layout_alignStart="@+id/etYoutubeUrl" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Youtube Code :"
+            android:id="@+id/youtubecode"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/etYoutubeUrl"
+            android:layout_alignLeft="@+id/etYoutubeCode"
+            android:layout_alignStart="@+id/etYoutubeCode" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hapus"
+            android:id="@+id/btnHapus"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/btnPost"
+            android:layout_toStartOf="@+id/btnPost" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Publish Video"
+            android:id="@+id/mySwitch"
+            android:checked="false"
+            android:layout_below="@+id/etYoutubeCode"
+            android:layout_alignLeft="@+id/btnHapus"
+            android:layout_alignStart="@+id/btnHapus"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/switchStatus"
+            android:text="0"
+            android:layout_below="@+id/etYoutubeCode"
+            android:layout_alignRight="@+id/etYoutubeCode"
+            android:layout_alignEnd="@+id/etYoutubeCode"
+            android:layout_marginTop="7dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/status"
+            android:text="OFF"
+            android:layout_alignTop="@+id/switchStatus"
+            android:layout_toLeftOf="@+id/switchStatus"
+            android:layout_toStartOf="@+id/switchStatus"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+
+</ScrollView>
