@@ -7,12 +7,12 @@ Contoh aplikasi ini dapat digunakan untuk kepentingan belajar. Dibuat menggunaka
 
 Aplikasi berbasis Localhost. Membutuhkan WebServer/WebSocket (XAMPP/WampServer) dan koneksi Internet.
 
-Tidak termasuk database file. Silahkan buat sendiri, lihat (pelajari) dari confignya.
+Tidak termasuk file database. Silahkan buat sendiri, lihat (pelajari) dari confignya.
 
 Usage
 ------
 
-1. Pindahkan PHP file (folder "layarkitaPHP") ke htdocs ("www" kalau pakai WampServer).
+1. Pindahkan file PHP (folder "layarkitaPHP") ke htdocs ("www" kalau pakai WampServer).
 2. Buat database.
 3. Setting config file PHP-nya sesuai database yang dibuat.
 4. Setting URL localhostnya sesuai dengan IP anda.
@@ -31,7 +31,7 @@ User
 Admin
 * Menghapus video dan menambah video baru.
 * Mengatur dan mengubah judul, deskripsi & url dari video.
-* Terima(Publish) atau Tolak (Delete/Unpublish) video yang direkomendasikan oleh user.
+* Terima (Publish) atau Tolak (Delete/Unpublish) video yang direkomendasikan oleh user.
 * Menambah, menghapus & mengubah komentar yang ada pada video.
 * Share video ke media sosial.
 
