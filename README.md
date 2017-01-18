@@ -46,4 +46,4 @@ Screenshots
 
 Author
 -------
-Copyright : Dhika TB | dhikatb@gmail.com
+Dhika TB | dhikatb@gmail.com
