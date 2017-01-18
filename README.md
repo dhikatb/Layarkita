@@ -1,7 +1,7 @@
 Layarkita
 =======
 
-Layarkita adalah (contoh) aplikasi Android yang menyediakan tayangan video-video terbaik yang ada di Internet.
+Layarkita adalah (contoh) aplikasi Android yang menayangan kumpulan video-video terbaik yang ada di Internet. 
 
 Contoh aplikasi ini dapat digunakan untuk kepentingan belajar. Dibuat menggunakan Java, PHP dan MySQL. Dengan IDE Android Studio.
 
