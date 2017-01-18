@@ -29,9 +29,9 @@ User
 * Dapat merekomendasikan video untuk ditayangkan.
 
 Admin
-* Menghapus video & menambah video baru.
-* Mengatur & mengubah judul, deskripsi & url video.
-* Terima/Tolak video yang direkomendasikan member.
+* Menghapus video dan menambah video baru.
+* Mengatur dan mengubah judul, deskripsi & url dari video.
+* Terima(Publish) atau Tolak (Delete/Unpublish) video yang direkomendasikan oleh user.
 * Menambah, menghapus & mengubah komentar yang ada pada video.
 * Share video ke media sosial.
 
