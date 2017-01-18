@@ -1,4 +1,4 @@
-Layaria
+Layarkita
 =======
 
 Layarkita adalah aplikasi Android yang menyediakan tayangan video-video terbaik yang ada di Internet.
