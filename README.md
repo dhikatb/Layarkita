@@ -7,7 +7,7 @@ Contoh aplikasi ini dapat digunakan untuk kepentingan belajar. Dibuat menggunaka
 
 Aplikasi berbasis Localhost. Membutuhkan WebServer/WebSocket (XAMPP/WampServer) dan koneksi Internet.
 
-Belum termasuk file database. Silahkan buat sendiri, lihat dari confignya.
+Tidak termasuk file database. Silahkan buat sendiri, lihat (pelajari) dari confignya.
 
 Usage
 ------
@@ -20,10 +20,10 @@ Usage
 
 API KEY saya biarkan default milik saya, silahkan diganti jika anda punya API KEY sendiri.
 
-Fitur
+Features
 -----
 
-Member
+User
 
 * Share video ke media sosial
 * Komentar pada video
@@ -40,11 +40,10 @@ Admin
 
 
 
-Screenshot
+Screenshots
 ----------
 ![](https://github.com/dhikatb/Layarkita/blob/master/screenshot/login.png) ![](https://github.com/dhikatb/Layarkita/blob/master/screenshot/list.png) ![](https://github.com/dhikatb/Layarkita/blob/master/screenshot/detail%20user.png)
 
 Author
 -------
-
-Dhika TB - dhikatb@gmail.com
+Copyright : Dhika TB | dhikatb@gmail.com
