@@ -52,16 +52,3 @@ include_once 'regconnection.php';
 		
 	}
 ?>
-
-<html>
-<head><title>Login | Dhika TB</title></head>
-    <body>
-        <h1>Login Example | Dhika TB</h1>
-        <form action="<?PHP $_PHP_SELF ?>" method="post">
-			Username <input type="text" name="username" value="" placeholder="Enter Username" /><br/>
-            Email <input type="text" name="email" value="" placeholder="Enter Email" /><br/>
-            Password <input type="password" name="password" value="" placeholder="Enter Password" /><br/>
-            <input type="submit" name="btnSubmit" value="Daftar"/>
-        </form>
-    </body>
-</html>

@@ -29,16 +29,3 @@ if(isset($_POST['cid']) && isset($_POST['txtKomenName']) && isset($_POST['txtKom
 }
     
 ?>
-<html>
-<head><title>Insert | KosalGeek</title></head>
-    <body>
-        <h1>Insert Example | <a href=”http://www.kosalgeek.com”>KosalGeek</a></h1>
-        <form action="<?PHP $_PHP_SELF ?>" method="post">
-            Name <input type="text" name="txtName" value=""/><br/>
-            Qty <input type="text" name="txtQty" value=""/><br/>
-            Price <input type="text" name="txtPrice" value=""/><br/>
-            Image URL <input type="text" name="txtImageUrl" value=""/><br/>
-            <input type="submit" name="btnSubmit" value="Insert"/>
-        </form>
-    </body>
-</html>
