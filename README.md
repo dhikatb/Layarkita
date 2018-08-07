@@ -1,14 +1,8 @@
 Layarkita
-=======
+======= 
 
-Layarkita adalah (contoh) aplikasi Android yang menyediakan/menayangan kumpulan video-video terbaik yang ada di Internet serta dapat saling berinteraksi di dalamnya. 
-
-Contoh aplikasi ini dapat digunakan untuk kepentingan belajar. Dibuat menggunakan Java, PHP dan MySQL.
-Direkomendasikan pakai IDE Android Studio.
-
-Aplikasi berbasis Localhost. Membutuhkan WebServer/WebSocket (XAMPP/WampServer) dan koneksi Internet.
-
-Tidak termasuk file database. Silahkan buat sendiri, lihat (pelajari) dari confignya.
+Contoh aplikasi ini dapat digunakan untuk kepentingan belajar.
+Dibuat menggunakan Java, PHP dan MySQL.
 
 Usage
 ------
@@ -41,8 +35,3 @@ Admin
 Screenshots
 ----------
 ![](https://github.com/dhikatb/Layarkita/blob/master/screenshot/login.png) ![](https://github.com/dhikatb/Layarkita/blob/master/screenshot/list.png) ![](https://github.com/dhikatb/Layarkita/blob/master/screenshot/detail%20user.png)
-
-
-Author
--------
-Dhika TB - dhikatb@gmail.com
